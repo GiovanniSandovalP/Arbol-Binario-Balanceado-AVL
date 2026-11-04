@@ -24,8 +24,8 @@ public class VistaArbolPanel extends JPanel {
         txtVistaColumnas = crearAreaTexto();
 
         JTabbedPane pestanas = new JTabbedPane();
-        pestanas.addTab("Estructura (texto)", new JScrollPane(txtVistaArbol));
-        pestanas.addTab("Columnas Balanceadas", new JScrollPane(txtVistaColumnas));
+        pestanas.addTab("Arbol sin balancear", new JScrollPane(txtVistaArbol));
+        pestanas.addTab("Arbol ya Balanceado", new JScrollPane(txtVistaColumnas));
         add(pestanas, BorderLayout.CENTER);
 
         limpiar();
